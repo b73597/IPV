@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.parse'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.0'
+
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+
+        applicationId "com.farr.android.farrapp"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], exclude: 'android-support-v4.jar', dir: 'libs')
+    compile 'com.android.support:multidex:1.0.0'
+
+    compile fileTree(dir: 'src/main/libs', include: 'Parse-*.jar')
+
+    compile 'com.android.support:appcompat-v7:22.1.0'
+    compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(dir: 'src/main/libs', include: 'Parse-*.jar')
+    compile 'com.parse:parse-android:1.+'
+
+    //compile 'com.parse.bolts:bolts-android:1.2.0'
+//    compile (dir: 'libs', include: 'ParseCrashReporting-*.jar')
+    compile files('libs/Parse-1.11.0.jar')
+//    compile (dir: 'libs', include: 'Parse-*.jar')
+    compile files('libs/Parse-1.11.0/Parse-1.11.0.jar')
+}

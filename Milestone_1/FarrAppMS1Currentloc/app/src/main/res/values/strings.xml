@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FarrApp</string>
+
+    <string name="FarrApp">Welcome to FarrApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="LoginBtn">Login</string>
+    <string name="SignupBtn">Sign Up</string>
+    <string name="LogoutBtn">Log Out</string>
+    <string name="Welcome">Welcome!</string>
+    <string name="title_activity_search_result">Search results</string>
+</resources>
