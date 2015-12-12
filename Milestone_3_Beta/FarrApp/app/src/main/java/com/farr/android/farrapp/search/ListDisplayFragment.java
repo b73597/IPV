@@ -36,9 +36,7 @@ import java.util.HashMap;
 
 import static org.apache.http.HttpStatus.*;
 
-/**
- * Created by vhnvn on 11/11/15.
- */
+
 public class ListDisplayFragment extends Fragment {
     SearchListAdapter mAdapter;
     ListView listView;
