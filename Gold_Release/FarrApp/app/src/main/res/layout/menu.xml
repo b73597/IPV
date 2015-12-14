@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/menu_items_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="#26164c">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.93"
+            android:src="@mipmap/farrapp_logo_login"/>
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="All type"
+            android:id="@+id/menu_btn_all"
+            android:layout_gravity="center_horizontal"
+            android:background="#8876a9" />
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Bars"
+            android:id="@+id/menu_btn_beer"
+            android:layout_gravity="center_horizontal"
+            android:background="#8876a9" />
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Restaurants"
+            android:id="@+id/menu_btn_food"
+            android:layout_gravity="center_horizontal"
+            android:background="#8876a9" />
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nigh Clubs"
+            android:id="@+id/menu_btn_night"
+            android:layout_gravity="center_horizontal"
+            android:background="#8876a9" />
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Calendar"
+            android:id="@+id/menu_btn_calendar"
+            android:layout_gravity="center_horizontal"
+            android:background="#8876a9" />
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Settings"
+            android:id="@+id/menu_btn_settings"
+            android:layout_gravity="center_horizontal"
+            android:background="#8876a9" />
+
+
+        <TextView
+            android:padding="10dp"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Logout"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/menu_btn_logout"
+            android:layout_gravity="center_horizontal"
+            android:background="#8876a9" />
+    </LinearLayout>
+</LinearLayout>
